@@ -18,7 +18,7 @@ h1 {
 }
 
 .background {
-    background-image: url(../Ruby/star.jpg);
+    background-image: url(star.jpg);
     background-size: cover;
     color: #af200a;
     text-align: center;

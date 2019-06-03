@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: 'Baloo Da';
+}
+
+body h1 {
+  margin-top: 70px;
+}
+
+#board div {
+  float: left;
+  box-sizing: border-box;
+  height: 120px;
+  width: 120px;
+  border: solid 3px white;
+  /*display: inline-block; */
+  align-items: center;
+  margin: 3px;
+  font-size: 3em;
+  text-align: center;
+  line-height: 120px;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+ }
+ 
+ #board div:nth-child(3n+1) {
+  clear: both;
+ }
+
+ .box:hover {
+  animation: jelly 0.5s;
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+#reset {
+text-align: center;
+font-size: 20px;
+font-family: 'Baloo Da';
+border: 3px solid white;
+background-color: black;
+color: white;
+height: 50px;
+width: 100px;
+margin: 5px;
+}
